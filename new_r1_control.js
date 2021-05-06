@@ -2009,7 +2009,7 @@ function send(tips,type,ws_type,data,call=null){
 }
 
 function load(){
-    var head = "<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=0,maximum-scale=1,viewport-fit=cover'><meta name='format-detection' content='telephone=no'><meta name='renderer' content='webkit'/><meta name='force-rendering' content='webkit'/><meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1'/><meta name='referrer' content='never'><title>R1控制台</title><link rel='stylesheet' href='//r1.wxfsq.com:86/new_r1_control.css?t="+new Date().getTime()+"'/><link rel='shortcut icon' href='https://scpic.chinaz.net/files/pic/pic9/202101/apic30031.jpg' sizes='100x100'/></head>";
+    var head = "<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=0,maximum-scale=1,viewport-fit=cover'><meta name='format-detection' content='telephone=no'><meta name='renderer' content='webkit'/><meta name='force-rendering' content='webkit'/><meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1'/><meta name='referrer' content='never'><title>R1控制台</title><link rel='stylesheet' href='./new_r1_control.css?t="+new Date().getTime()+"'/><link rel='shortcut icon' href='https://scpic.chinaz.net/files/pic/pic9/202101/apic30031.jpg' sizes='100x100'/></head>";
     document.getElementsByTagName("head")[0].innerHTML = head;
 	document.body.appendChild(main_div);
 	main_div.style = 'height:100%';
@@ -2022,7 +2022,7 @@ function load(){
 	
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = '//r1.wxfsq.com:86/jquery.min.js';
+    script.src = './jquery.min.js';
     main_div.appendChild(script);
 	if(location.href.indexOf('noimg') == -1){
 		var background1 = localStorage.getItem('background');
