@@ -1,0 +1,211 @@
+h3{
+text-align:center;
+color: red;
+}
+text{
+color: red;
+}
+
+text[id=list_title]{
+color: #66ccff;
+}
+
+text[id=list_ico]{
+color: #66ccff;
+}
+
+.lrc{
+	minHeight: 25px;
+	text-align:center;	
+	color: #FF9347;
+	font-size: 16px;
+}
+
+select{
+	min-width:30px;
+	height: 25px;
+	padding: 1px 0px;
+	color: red;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.2);
+	font-size: 14px;
+	margin: 15px 5px;
+	border-color: #66ccff;
+}
+
+#input{
+	display:block;
+	margin:10px auto;
+	width:70%;
+	height:50px;
+	font-size: 16px;
+	color: red;
+	border-color: #66ccff;
+	outline: none;
+	background:rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+}
+
+#text{
+	display:block;
+	margin:10px auto;
+	width:70%;
+	height:200px;
+	font-size: 16px;
+	color: red;
+	border-color: #66ccff;
+	outline: none;
+	background:rgba(255, 255, 255, 0.2);
+	border-radius:15px;
+}
+
+.div_list{
+	border-radius:15px;
+}
+.more{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #66ccff;
+	text-align: center;
+	display: block;
+	margin: 5px auto;
+	font-size: 16px;
+	padding: 15px 100px;
+	border-radius:15px;
+}
+.more:active{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.span{
+	color: #66ccff;
+	text-align: center;
+	display: block;
+	margin: 5px auto;
+	font-size: 16px;
+	padding: 10px 1px;
+	border-radius:15px;
+	
+}
+.table{
+	border-radius:15px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.span[playing=true]{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.span:hover{
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.span:active{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+background-color: #66ccff;
+border: none;
+color: white;
+padding: 13px 26px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 8px 5px;
+cursor: pointer;
+border-radius: 25px;/*圆角程度*/
+transition-duration: 0.4s;/*鼠标悬停时间*/
+box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);/*按钮阴影*/
+outline: none;/*隐藏外边框线条*/
+}
+.btn:hover {
+background-color: #ff0000; /* Green */
+color: white;
+}
+.btn:active {
+	background-color: #FF9347;
+}
+input[type=range] {
+	margin: 15px 10px;
+	background: #66ccff; 
+    -webkit-appearance: none;
+    width: 50%;
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:disabled {
+    background: #808080; 
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
+
+@-webkit-keyframes img {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+    }
+	100% {
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+		}
+}
+
+/* 弹窗 (background) */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 设置在顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.2); 
+}
+
+/* 弹窗内容 */
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px auto;
+    border: 1px solid #66ccff;
+    width: 70%;
+	height: 300px;
+}
+
+/* 关闭按钮 */
+.close {
+    color: #66ccff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
